@@ -43,7 +43,7 @@ params:
 
   editURL:
     enable: true
-    base: "https://github.com/daivanesia/academic/edit/main"
+    base: "https://github.com/daivanesia/academic/edit/main/content"
 
   footer:
     enable: true

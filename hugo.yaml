@@ -1,0 +1,51 @@
+baseURL: "https://example.org/"
+title: "Daivanesia Academic"
+defaultContentLanguage: "id"
+languages:
+  id:
+    languageName: "Bahasa Indonesia"
+    weight: 1
+    languageCode: "id"
+
+module:
+  imports:
+    - path: "github.com/imfing/hextra"
+
+menu:
+  main:
+    - identifier: "mathematics"
+      name: "Matematika"
+      weight: 1
+      pageRef: "/mathematics"
+    # - identifier: "physics"
+    #   name: "Fisika"
+    #   weight: 2
+    #   pageRef: "/physics"
+    - name: "Cari"
+      weight: 3
+      params:
+        type: "search"
+    - name: "GitHub"
+      weight: 4
+      url: "https://github.com/daivanesia/academic"
+      params:
+        icon: "github"
+
+params:
+  description: "Daivanesia Academic adalah platform yang berisi konten akademik, termasuk artikel, dan materi pembelajaran."
+
+  navbar:
+    displayTitle: true
+    displayLogo: true
+    logo:
+      path: "logo/daivanesia_logo.svg"
+      link: "/"
+
+  editURL:
+    enable: true
+    base: "https://github.com/daivanesia/academic/edit/main"
+
+  footer:
+    enable: true
+    displayCopyright: true
+    displayPoweredBy: false
